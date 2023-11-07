@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="../styles/main.css"/>
+</head>
+<body>
+    <div>
+        <table class="nav">
+            <tr>
+                <th>Навигация сайта</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="../index.html">На главную</a></li>
+                        <li><a href="./zara.html">Тренды ZARA 2024</a></li>
+                        <li><a href="./static_passport.html#sol">На страницу с паспортом</a></li>
+                        <li><a href="./algorithm.html">Узнай место в вагоне</a></li>
+                        <li><a href="./form.html" class="current_nav">Форма</a></li>
+                        <li><a href="https://www.zara.com" target="_blank"><img class="nav_image" src="../images/Zara_Logo.svg"></a></li>
+                        
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <h3 align="center">Расскажите о себе</h3>
+                    <div class="marg">
+                    <form action="./form.html" method="get" id="user_data" name="user_data" target="_blank">
+                        <p>Фамилия: <input name="surname" type="text" value="Иксанова"></p>
+                        <p>Имя:<input name="name" type="text" value="Карина"></p>
+                        <p>Телефон:<input name="phone" type="tel"></p>
+                        <p>Email:<input name="email" type="email"></p>
+                        <p>Дата отправки сообщения:<input name="send_date" type="date"></p>
+                        <br>
+                        <p>
+                        <input type="reset" name="reset_pers" value="обновить">
+                        <input type="submit" name="submit_pers" value="отправить">
+                        </p>
+                    </form>
+                </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3 align="center">Найди себя в Яндексе</h3>
+                    <div class="marg">
+                        <form action="https://www.ya.ru/search?" method="get" id="search" name="search" target="_blank">
+                            <p>ФИО:<input name="text" type="text" value="Иксанова Карина Рустамовна"></p>
+                            <p>Страница поиска: <input name="p" type="number" value="0"></p>
+                            <p>Место проживания:
+                                <input checked name="lr" type="radio" value="213">Москва
+                                <input name="lr" type="radio" value="2">Петербург
+                            </p>
+
+                            <p>Язык поиска:
+                                <input checked name="lang" type="checkbox" value="en">Английский
+                                <input checked name="lang" type="checkbox" value="ru">Русский
+                                <input checked name="lang" type="checkbox" value="be">Белорусский
+                            </p>
+
+                            <p>Дата: <input name="search_date" type="date" value='2023-11-01'></p>
+                            <p>Пароль: <input name="password" size="6" type="password" value="qwerty"></p>
+                            
+                            <input name="source" type="hidden" value="tabbar">
+                            <p>
+                                <input name="reset" type="Reset" value="Обновить">
+                                <input name="submit" type="Submit" value="Искать">
+                            </p>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

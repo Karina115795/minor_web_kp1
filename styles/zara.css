@@ -1,0 +1,20 @@
+.logo {
+    background-image: url(../images/Zara_Logo.svg);
+    width: min-content;
+    background-size: 200px;
+}
+
+.items {
+    background-color: rgba(255, 255, 255, 0.94);
+    text-align: center;
+    width: 900px;
+}
+
+.item {
+    width: 250px;
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+}
+/* 
+<img class="nav_image" src="../images/Zara_Logo.svg"> */
